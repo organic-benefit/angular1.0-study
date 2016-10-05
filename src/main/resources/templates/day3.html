@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello World!</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+</head>
+<body>
+<div ng-app="" ng-init="days=30; cost=1250; client={firstname:'출력',lastname:'dev',cardNo:109}; month=[1,2,3,4,5,6,7,8,9,10,11,12]">
+    <p>안녕하세요 {{client.firstname + " " + client.lastname}}님!</p>
+    <p>교통비: {{cost * days}}</p>
+    <p>카드번호: {{client.cardNo}}</p>
+    <p>{{month[2]}}월 사용내역</p>
+</div>
+</body>
+</html>
